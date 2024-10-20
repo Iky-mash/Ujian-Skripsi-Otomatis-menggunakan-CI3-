@@ -1,118 +1,103 @@
-<!-- kode salah -->
-
 <div class="row">
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
-
             <div class="card-body">
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" id="searchInput" onkeyup="searchTable()" placeholder="Cari berdasarkan judul tugas akhir, NIM, atau pembimbing...">
-                    </div>
-                </div>
-                <div class="row m-2">
-                    <p class="card-title mb-3">Data Dosen</p>
-                    <!-- Tombol Tambah Data Dosen di ujung kanan -->
-                    <div class="ml-auto">
-                        <button class="btn btn-primary mb-3" onclick="addDosen()">Tambah Data Dosen</button>
-                    </div>
-                </div>
-
+                <p class="card-title">Jadwal Kegiatan Dosen</p>
                 <div class="table-responsive">
                     <table class="table table-striped table-borderless">
                         <thead>
                             <tr>
-                                <th>Nama Dosen</th>
-                                <th>NIDN</th>
-                                <th>Bidang Keahlian</th>
-                                <th>Status</th>
-                                <th>Aksi</th>
+                                <th>Hari</th>
+                                <th>Waktu</th>
+                                <th>Bpk Hardan Gutama</th>
+                                <th>Ibu Dhina Puspasari</th>
+                                <th>Bpk Andri P.</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Dr. Ahmad Fauzi, M.Pd</td>
-                                <td class="font-weight-bold">1234567890</td>
-                                <td>Pendidikan Bahasa</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-success">Aktif</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td>Senin</td>
+                                <td>08:00 - 10:00</td>
+                                <td>Mengajar, Rapat</td>
+                                <td>Mengajar</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>Prof. Sri Rahayu, M.Sc</td>
-                                <td class="font-weight-bold">0987654321</td>
-                                <td>Teknologi Informasi</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-success">Aktif</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td></td>
+                                <td>09:00 - 11:00</td>
+                                <td>-</td>
+                                <td>Mengajar</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>Dr. Budi Santoso, S.T., M.T.</td>
-                                <td class="font-weight-bold">1122334455</td>
-                                <td>Teknik Sipil</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-warning">Cuti</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td></td>
+                                <td>14:00 - 16:00</td>
+                                <td>-</td>
+                                <td>Konsultasi Mahasiswa, Penelitian</td>
+                                <td>Mengajar</td>
                             </tr>
                             <tr>
-                                <td>Dr. Fitriani, M.Ag</td>
-                                <td class="font-weight-bold">5544332211</td>
-                                <td>Studi Islam</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-warning">Cuti</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td>Selasa</td>
+                                <td>09:00 - 12:00</td>
+                                <td>Mengajar, Bimbingan</td>
+                                <td>08:00 - 10:00</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>Dr. Indah Pratiwi, S.Si, M.Si</td>
-                                <td class="font-weight-bold">6677889900</td>
-                                <td>Matematika</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-danger">Tidak Aktif</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td></td>
+                                <td>10:00 - 12:00</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Penelitian</td>
                             </tr>
                             <tr>
-                                <td>Prof. Suyanto, Ph.D</td>
-                                <td class="font-weight-bold">9988776655</td>
-                                <td>Manajemen Pendidikan</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-warning">Cuti</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td></td>
+                                <td>14:00 - 16:00</td>
+                                <td>-</td>
+                                <td>Konsultasi Mahasiswa, Penelitian</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>Dr. Nanda Putri, M.Psi</td>
-                                <td class="font-weight-bold">5566778899</td>
-                                <td>Psikologi</td>
-                                <td class="font-weight-medium">
-                                    <div class="badge badge-success">Aktif</div>
-                                </td>
-                                <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editDosen(this)">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteDosen(this)">Delete</button>
-                                </td>
+                                <td>Rabu</td>
+                                <td>13:00 - 16:00</td>
+                                <td>Penelitian, Rapat</td>
+                                <td>09:00 - 11:00</td>
+                                <td>Mengajar</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>08:00 - 10:00</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Kamis</td>
+                                <td>10:00 - 12:00</td>
+                                <td>Konsultasi Mahasiswa</td>
+                                <td>13:00 - 15:00</td>
+                                <td>Mengajar</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>09:00 - 11:00</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Jumat</td>
+                                <td>08:00 - 11:00</td>
+                                <td>Rapat, Mengajar</td>
+                                <td>10:00 - 12:00</td>
+                                <td>Rapat, Seminar</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>13:00 - 15:00</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Rapat, Seminar</td>
                             </tr>
                         </tbody>
                     </table>
@@ -120,5 +105,4 @@
             </div>
         </div>
     </div>
-
-    <!-- kode salah -->
+</div>

@@ -164,7 +164,7 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?= site_url('Dashboard') ?>">
+                        <a class="nav-link active" href="<?= site_url('Admin') ?>">
                             <i class="bi bi-grid"></i>
                             <span class="menu-title">Dashboard</span>
                         </a>
@@ -177,8 +177,8 @@
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Dosen/index') ?>">Daftar Dosen</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Agenda Dosen</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Admin/Data_dosen') ?>">Daftar Dosen</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Admin/Agenda_dosen') ?>">Agenda Dosen</a></li>
                             </ul>
                         </div>
                     </li>
@@ -190,9 +190,9 @@
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="<?= site_url('Mahasiswa/index') ?>">Daftar mahasiswa</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?= site_url('Mahasiswa/TA') ?>">Tugas Akhir</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?= site_url('Mahasiswa/DPS') ?>">Dosen Penguji</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?= site_url('Admin/Mahasiswa') ?>">Daftar mahasiswa</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?= site_url('Admin/TA') ?>">Tugas Akhir</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?= site_url('Admin/DPS') ?>">Dosen Penguji</a></li>
                             </ul>
                         </div>
                     </li>
@@ -204,8 +204,8 @@
                         </a>
                         <div class="collapse" id="charts">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Master/index') ?>">Seminar Proposal</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Master/semhas') ?>">Seminar Hasil</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Admin/sempro') ?>">Seminar Proposal</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="<?= site_url('Admin/semhas') ?>">Seminar Hasil</a></li>
                             </ul>
                         </div>
                     </li>
