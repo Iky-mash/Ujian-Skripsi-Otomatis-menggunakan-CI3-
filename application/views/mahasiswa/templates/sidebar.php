@@ -1,23 +1,18 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="<?= site_url('Dashboard') ?>">
+            <a class="nav-link" href="<?= site_url('Mahasiswa') ?>">
                 <i class="bi bi-grid"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link"  href="<?= site_url('Mahasiswa/profil') ?>">
                 <i class="icon-layout menu-icon"></i>
-                <span class="menu-title">Dosen</span>
-                <i class="menu-arrow"></i>
+                <span class="menu-title">Profil</span>
+              
             </a>
-            <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="<?= site_url('Dosen/index') ?>">Daftar Dosen</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Agenda Dosen</a></li>
-                </ul>
-            </div>
+           
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">

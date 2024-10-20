@@ -1,20 +1,24 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
-
 class Mahasiswa extends CI_Controller
 {
-
+    private function load_template($view, $data = [])
+    {
+        $this->load->view('mahasiswa/templates/navbar', $data);
+        $this->load->view('mahasiswa/templates/sidebar', $data);
+        $this->load->view($view, $data);
+        $this->load->view('mahasiswa/templates/footer', $data);
+    }
 
     public function index()
     {
-        $this->template->load('mahasiswa/data_mahasiswa', 'template');
+        $data['title'] = 'Dashboard Mahasiswa';
+        $this->load_template('mahasiswa/dashboard', $data);
     }
-    public function TA()
+
+    // Method untuk view lain, contoh: profil mahasiswa
+    public function profil()
     {
-        $this->template->load('TA/tugas_akhir', 'template');
-    }
-    public function DPS()
-    {
-        $this->template->load('DPS/dosen_penguji', 'template');
+        $data['title'] = 'Profil Mahasiswa';
+        $this->load_template('mahasiswa/profil', $data);
     }
 }
